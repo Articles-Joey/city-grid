@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { useHotkeys } from "react-hotkeys-hook";
 
 import useStore from "@/components/useStore";
+import Link from "next/link";
 
 const PreviewCanvas = dynamic(() => import('@/components/PreviewCanvas'), {
     ssr: false,
@@ -140,23 +141,33 @@ export default function PageContent() {
                     <div className="h2">Credit</div>
 
                     <div>
-                        <button
-                            className="btn btn-light"
-                            onClick={() => {
-
-                            }}
+                        <Link
+                            target="_blank"
+                            href="https://github.com/Articles-Joey/city-grid"
                         >
-                            <i className="fab fa-github me-2"></i>
-                            <span>GitHub</span>
-                        </button>
-                        <button
-                            className="btn btn-light"
-                            onClick={() => {
+                            <button
+                                className="btn btn-light"
+                                onClick={() => {
 
-                            }}
+                                }}
+                            >
+                                <i className="fab fa-github me-2"></i>
+                                <span>GitHub</span>
+                            </button>
+                        </Link>
+                        <Link 
+                            target="_blank"
+                            href="https://github.com/Articles-Joey/city-grid/blob/main/README.md#attributions"
                         >
-                            Attributions
-                        </button>
+                            <button
+                                className="btn btn-light"
+                                onClick={() => {
+    
+                                }}
+                            >
+                                Attributions
+                            </button>
+                        </Link>
                     </div>
 
                 </div>
