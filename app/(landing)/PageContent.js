@@ -24,6 +24,14 @@ export default function PageContent() {
     useHotkeys("r", () => setCanvasKey(prevKey => prevKey + 1));
     // useHotkeys("b", () => setBackground(!background), [background]);
     useHotkeys("a", () => setAutoRotate(!autoRotate), [autoRotate]);
+    useHotkeys("f", () => handleFullscreen(), []);
+
+    useHotkeys("left", () => {
+        setQuantity(quantity - 1);
+    }, [quantity]);
+    useHotkeys("right", () => {
+        setQuantity(quantity + 1);
+    }, [quantity]);
 
     const handleFullscreen = () => {
         const element = document.getElementById('canvas-wrap');
@@ -128,6 +136,7 @@ export default function PageContent() {
                             }}
                         >
                             Fullscreen
+                            <span className={`badge bg-dark ms-2`}>F</span>
                         </button>
 
                     </div>
