@@ -1,5 +1,5 @@
 ## City Grid
-![Screenshot](public/preview/city-grid.gif)
+![Preview](public/preview/city-grid.gif)
 City Grid demo. Built with React.js, Three.js, and R3F.
 
 ## Getting Started

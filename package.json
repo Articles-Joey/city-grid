@@ -1,7 +1,9 @@
 {
   "name": "city-grid",
-  "version": "0.1.0",
-  "private": true,
+  "description": "",
+  "homepage": "https://city-grid.vercel.app/",
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,17 +13,17 @@
   "dependencies": {
     "@react-three/drei": "^10.3.0",
     "@react-three/fiber": "^9.1.2",
-    "bootstrap": "^5.3.3",
-    "next": "^15.3.3",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "bootstrap": "^5.3.8",
+    "next": "^16.0.7",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
     "react-hotkeys-hook": "^4.6.1",
-    "sass": "^1.89.2",
-    "three": "^0.174.0",
-    "zustand": "^5.0.5"
+    "sass": "^1.94.2",
+    "three": "^0.181.2",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
-    "eslint": "9.21.0",
-    "eslint-config-next": "15.3.3"
+    "eslint": "^9",
+    "eslint-config-next": "16.0.7"
   }
 }
